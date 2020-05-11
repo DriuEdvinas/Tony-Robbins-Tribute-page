@@ -17,7 +17,6 @@ body {
 .main-container {
   display: block;
   overflow: hidden;
-
 }
 #navbar {
   position: fixed;
@@ -32,7 +31,6 @@ body {
   margin: auto;
   overflow: hidden;
   text-align: center;
-  
 }
 #navbar ul {
   padding: 0;
@@ -71,7 +69,6 @@ body {
   top: 30%;
   left: 5%;
   text-align: center;
-
 }
 #showcase h1 {
   color: #fff;
@@ -87,18 +84,24 @@ body {
   margin: auto;
   align-items: center;
 }
-#about, #mission, #story, #books {
+#about,
+#mission,
+#story,
+#books {
   padding: 5rem 0;
 }
-.about, .mission, .story, .books {
-  height: 75em;
+.about,
+.mission,
+.story,
+.books {
+  height: 82em;
   background-color: var(--Eggshell);
- 
+  width: 100%;
 }
 .about img {
- margin: 50px 0;
+  margin: 50px 0;
   position: relative;
-  height: 650px;
+  height: 50%;
   width: 100%;
 }
 .about-text h1 {
@@ -115,12 +118,12 @@ body {
   font-size: 30px;
   font-weight: 300;
 }
-.mission{
+.mission {
   background-color: var(--NavyBlue);
   align-self: center;
 }
-.mission-text{
-  margin: 15em 0;
+.mission-text {
+  margin: 20em 0;
 }
 .mission-text h1 {
   text-align: center;
@@ -137,32 +140,34 @@ body {
   font-weight: 300;
   color: var(--Eggshell);
 }
-.story{
-  height: 85em;
-  width: 100%;
-}
-.story-text{
+
+.story-text {
   margin: 1em 0;
 }
 .story-text h1 {
   text-align: center;
-  margin: 30px;
+  margin: 50px;
   font-size: 60px;
   font-weight: 300;
   color: var(--Leather);
 }
 .story-text h3 {
   text-align: center;
- margin: 30px auto;
+  margin: 50px auto;
   font-size: 23px;
   font-weight: 400;
-  
 }
-.books{
-  background-color: var(--Leather);
+.books {
+  /* background-color: #8d7d64; */
+  background-image: url("../img/awesome-brown-background-1.jpg");
+  background-size: cover;
+  background-position: center-bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   margin: 0 0;
   height: 70em;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .books-text h1 {
@@ -170,42 +175,181 @@ body {
   font-size: 60px;
   font-weight: 300;
   color: var(--Eggshell);
+  margin: 50px;
 }
 .books-text h3 {
   text-align: center;
   font-size: 30px;
   font-weight: 500;
   margin: 30px;
+  color: var(--Eggshell);
 }
-.image-container{
+.image-container {
   align-items: center;
 }
-.image-container ul{
+.image-container ul {
   display: flex;
 }
 
-.image-container li{
+.image-container li {
   display: inline;
   margin: 20px;
 }
-.image-container h2{
+.image-container h2 {
   text-align: center;
-  color: var(--NavyBlue);
+  color: var(--Eggshell);
   font-weight: 500;
 }
-.image-container img{
+.image-container img {
   height: 500px;
 }
-.image-container img:hover{
+.image-container img:hover {
   border: var(--NavyBlue);
   height: 550px;
   transition: 0.7s;
 }
-footer{
+footer {
   margin: 2em;
   text-align: center;
 }
-footer h2{
+footer h2 {
   font-weight: 100;
   color: var(--Leather);
+}
+
+.to-top {
+  position: fixed;
+  top: 60em;
+  left: 2em;
+  background-color: var(--Leather);
+  width: 50px;
+  height: 60px;
+  border-style: none;
+  border-radius: 100px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+.to-top a {
+  position: absolute;
+  font-size: 50px;
+  font-weight: 500;
+  text-decoration: none;
+  top: 9px;
+  left: 14px;
+  color: white;
+}
+.to-top:hover {
+  background-color: var(--Eggshell);
+  transition: 0.8s;
+  opacity: 0.8;
+}
+.to-top a:hover {
+  color: var(--NavyBlue);
+  transition: 0.8s;
+}
+
+@media screen and (max-width: 768px) {
+  .showcase-container {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    text-align: center;
+  }
+  #showcase h1 {
+    color: #fff;
+    font-size: 60px;
+  }
+  #showcase h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+  }
+  .story{
+    height: 110em;
+  }
+  .books{
+    height: 90em;
+  }
+  .image-container img {
+    display: flex;
+    height: 300px;
+  }
+  .image-container img:hover {
+    border: var(--NavyBlue);
+    height: 350px;
+    transition: 0.7s;
+  }
+  .image-container{
+    align-items: center;
+  }
+  .image-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+  }
+  .image-container li{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image-container h2{
+    position: relative;
+    top:5em;
+    left: 2em;
+  }
+  .to-top{
+    top: 40em;
+  left: 2em;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .showcase-container {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    text-align: center;
+  }
+  #showcase h1 {
+    color: #fff;
+    font-size: 60px;
+  }
+  #showcase h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .container {
+    max-width: 1000px;
+    align-items: center;
+    text-align: center;
+  }
+  .image-container img {
+    height: 300px;
+  }
+  .image-container img:hover {
+    border: var(--NavyBlue);
+    height: 350px;
+    transition: 0.7s;
+  }
+  .image-container {
+    align-content: center;
+    margin-left: 3em;
+  }
+  .image-container li{
+    align-items: center;
+    text-align: center;
+  }
+  .image-container ul{
+    align-items: center;
+  }
+
+  .to-top{
+    top: 40em;
+  left: 2em;
+  }
 }
