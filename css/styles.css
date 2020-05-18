@@ -118,6 +118,15 @@ body {
   font-size: 30px;
   font-weight: 300;
 }
+#tribute-info {
+  text-decoration: none;
+  color: var(--NavyBlue);
+  font-weight: 700;
+}
+#tribute-info:hover {
+  color: var(--Leather);
+  transition: ease-out 0.3s;
+}
 .mission {
   background-color: var(--NavyBlue);
   align-self: center;
@@ -254,6 +263,7 @@ footer h2 {
     left: 4%;
     text-align: center;
   }
+
   #showcase h1 {
     color: #fff;
     font-size: 60px;
@@ -268,10 +278,10 @@ footer h2 {
     margin: auto;
     align-items: center;
   }
-  .story{
+  .story {
     height: 110em;
   }
-  .books{
+  .books {
     height: 90em;
   }
   .image-container img {
@@ -283,27 +293,30 @@ footer h2 {
     height: 350px;
     transition: 0.7s;
   }
-  .image-container{
+  .image-container {
     align-items: center;
   }
-  .image-container ul{
+  .image-container ul {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
   }
-  .image-container li{
+  .image-container li {
     display: flex;
     flex-wrap: wrap;
   }
-  .image-container h2{
+  .image-container h2 {
     position: relative;
-    top:5em;
+    top: 5em;
     left: 2em;
   }
-  .to-top{
+  .to-top {
     top: 40em;
-  left: 2em;
+    left: 2em;
+  }
+  #img-div {
+    background-position: center;
   }
 }
 
@@ -340,16 +353,16 @@ footer h2 {
     align-content: center;
     margin-left: 3em;
   }
-  .image-container li{
+  .image-container li {
     align-items: center;
     text-align: center;
   }
-  .image-container ul{
+  .image-container ul {
     align-items: center;
   }
 
-  .to-top{
+  .to-top {
     top: 40em;
-  left: 2em;
+    left: 2em;
   }
 }
